@@ -1,0 +1,38 @@
+/* Scss Document */
+* {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+  }
+
+
+   body {
+    background: $bg-color url(/sites/all/themes/ncats-2014/images/assets/bg-circle.png) no-repeat center center fixed;
+    @include bg-size;
+  }
+
+  
+
+
+
+  ::-webkit-input-placeholder {
+    text-indent: 10px;
+    font-size: 14px;
+  }
+  
+  :-moz-placeholder {
+    /* Firefox 18- */
+    text-indent: 10px;
+    font-size: 14px;
+  }
+  
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    text-indent: 10px;
+    font-size: 14px;
+  }
+  
+  :-ms-input-placeholder {
+    text-indent: 10px;
+    font-size: 14px;
+  }
+

@@ -1,0 +1,101 @@
+html {}
+
+body {}
+
+#wave_and_amp_banner {
+  position: absolute;
+  left: 180px;
+  top: 28px;
+}
+
+#grayscale_graph {
+  position: absolute;
+  top: 142px;
+  opacity: 0.75;
+}
+
+#grayscale_graph.half_opacity {
+  opacity: 0.5;
+}
+
+#black_line {
+  position: absolute;
+  top: 369px;
+  left: 8.5px;
+}
+
+#blue_graph {
+  display: none;
+  position: absolute;
+  top: 142px;
+  left: 9px;
+}
+
+#purple_graph {
+  display: none;
+  position: absolute;
+  top: 142px;
+  left: 10px;
+}
+
+#teal_graph {
+  display: none;
+  position: absolute;
+  top: 116.5px;
+  left: 9px;
+}
+
+#green_graph {
+  display: none;
+  position: absolute;
+  top: 142px;
+  left: 8.5px;
+}
+
+#teal_wordbox_hotspot,
+#purple_wordbox_hotspot,
+#blue_wordbox_hotspot,
+#green_wordbox_hotspot {
+  position: absolute;
+  height: 61px;
+  width: 170px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#teal_wordbox_hotspot,
+#green_wordbox_hotspot {
+  top: 539px;
+}
+
+#purple_wordbox_hotspot,
+#blue_wordbox_hotspot {
+  top: 142px;
+}
+
+#teal_wordbox_hotspot,
+#purple_wordbox_hotspot {
+  left: 603px;
+}
+
+#green_wordbox_hotspot {
+  left: 306px;
+}
+
+#blue_wordbox_hotspot {
+  left: 8.5px;
+}
+
+#color-map {
+  position: absolute;
+  top: 243px;
+  opacity: 0.001;
+}
+
+#color-map:hover {
+  cursor: pointer;
+}
+
+#wave_and_amp_banner:hover {
+  cursor: pointer;
+}

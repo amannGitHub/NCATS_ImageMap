@@ -1,0 +1,410 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box;
+  /* Disable font boosting */
+  max-height: 1000000px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+img[usemap] {
+border: none;
+height: auto;
+max-width: 100%;
+width: auto;
+}
+img.map, map area{
+    outline: none;
+}
+
+
+
+#chip {
+  width: 100%;
+  margin:0;
+  padding:0;
+/*  max-width:869px;
+  max-height:900px;*/
+}
+
+/*b {
+  color: #fff;
+}*/
+
+#chip-left {
+	float:none;
+	width:100%;
+	/*max-width:none;
+	max-height:none;*/
+	  max-width:869px;
+  max-height:900px;
+	padding:0;
+	margin:0;
+}
+#chip-left img {
+	width: 100%;
+	max-width: none;
+	max-height: none;
+}
+
+#chip-right {
+	float:left;
+	background-image:url(http://palladiantest.com/ncats/images/right-panel-background.jpg);
+	background-repeat:no-repeat;
+	background-position: right 0 top 0;
+	height:900px;
+	max-height:900px;
+	width:34%;
+	overflow:hidden;
+	padding:0;
+	display: none;
+}
+
+#chip-right p, #chip-right h2 {
+	color:#00ffff;
+}
+#chip-right h2 {
+	margin:20px 30px 20px 30px;
+}
+#chip-right h2 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+#chip-right p {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.9em;
+	line-height:1.6em;
+	margin:20px 30px 20px 30px;
+}
+
+#chip-right a {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#00FFFF;
+	margin:0;
+	white-space:nowrap;
+	
+	font-weight:bold;
+}
+
+#chip-learn {
+	clear:left;
+	margin-top:40px;
+	background:#000;
+	padding:5px;
+	float:left;
+	width:100px;
+	text-align:center;
+}
+#chip-image {
+	float:left;
+	margin:0 0 0 30px;
+}
+
+p.shrinkme {
+	clear:left;
+	padding-top:5px;
+}
+
+#chip-prev {
+	background:#000;
+	padding:5px;
+	width:90px;
+	text-align:center;
+	float:left;
+}
+#chip-next {
+	background:#000;
+	padding:5px;
+	width:70px;
+	text-align:center;
+	float:right;
+}
+#chip-prev a, #chip-next a {
+	text-decoration:none;
+	display:block;
+	font-weight:normal;
+	color:#00ffff;
+}
+
+#chip-controls {
+	float: left;
+  width: 100%;
+  padding-bottom: 20px;
+}
+#chip-brain {
+display:none;
+}
+#chip-skin {
+	display:none;
+}
+#chip-blood {
+	display:none;
+}
+#chip-heart {
+	display:none;
+}
+#chip-kidney {
+	display:none;
+}
+#chip-adipose {
+	display:none;
+}
+#chip-lungs {
+	display:none;
+}
+#chip-liver {
+	display:none;
+}
+#chip-muscle {
+	display:none;
+}
+#chip-female {
+	display:none;
+}
+#chip-gastro {
+	display:none;
+}
+#chip-tumor {
+	display:none;
+}
+.chip-learnmore{
+background-color:  #fff;
+padding: 0;
+}
+
+a.chip-learnmore{
+text-decoration: none;
+}
+
+
+.modal-backdrop.in { z-index: auto;}
+.modal-open {
+  padding-right: 0 !important;
+}
+#stepByStep.stepMe{
+	cursor:pointer;
+}
+  .vertical-alignment-helper {
+      display:table;
+      height: 100%;
+      width: 100%;
+  }
+  .vertical-align-center {
+      /* To center vertically */
+      display: table-cell;
+      vertical-align: middle;
+  }
+  .modal-content {
+      /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+      width:inherit;
+      height:inherit;
+      /* To center horizontally */
+      margin: 0 auto;
+  }
+
+/*.modal-header {
+    border-bottom: none !important;
+  }*/
+
+  .modal-header img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .modal-header button, .modal-header button:hover {
+    color: white;
+    opacity: 1;
+  }
+
+
+  .modal-content {
+    background: url('/sites/all/themes/ncats-2014/images/Chip-Background.png');
+  }
+
+  .modal-body {
+    background-color: rgba(18, 77, 118, 0.8);
+  }
+
+  .modal-body button.btn {
+    text-transform: uppercase;
+    background-color: white;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .modal-body button.btn:hover {
+    background-color: #6eccdc; 
+  }
+
+  .modal-body button.btn a {
+    color: #124d76;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .modal-body > .row p, .modal-body > .row h4 {
+    color: white !important;
+  } 
+
+  .modal-body > .row {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .modal-body > .glyphicon {
+    color: white;
+    margin-top: 50px;
+    cursor: pointer;
+    padding: 30px 0px;
+  }
+
+  .modal-body > .glyphicon-chevron-left {
+    float: left;
+  }
+
+  .modal-body > .glyphicon-chevron-right {
+    float: right;
+  }
+
+  .modal-body a:hover {
+  	text-decoration: none;
+  }
+
+
+@media (min-width: 750px) {
+	
+}
+
+@media (max-width: 749px) {
+	.desc:before {
+	  content: "This browser window is smaller than 710px wide.";
+	}
+	#chip {
+		width: 100%;
+		background-image:none;
+ 		max-width:700px;
+		background-color:#FFF;
+		max-height: none;
+	}
+	#chip-left {
+		float:none;
+		width:100%;
+		max-height:765px;
+		max-width:461px;
+		padding:0;
+		margin:0;
+		text-align:center;
+	}
+	#chip-right {
+		float:none;
+		background-image:none;
+		width:100%;
+		padding:0;
+		display: none;
+	}	
+	
+	#chip-right a {
+		color:#333;
+		text-decoration: none;
+	}
+	
+	#chip-right p, #chip-right h2 {
+		color:#333;
+		margin:0 0 10px 0;
+		padding:0;
+	}
+	
+	#chip-right h2 {
+		margin-top:20px;
+	}
+	
+	#chip-image {
+		display:none;
+	}
+	
+	p.shrinkme {
+		padding-top:0;
+		margin-top:0;
+	}
+	
+	#chip-learn {
+		background:black;
+		padding:5px;
+		width:110px;
+		text-align:center;
+		border-radius: 5px;
+		float:left;
+	}
+	#chip-learn a {
+		text-decoration:none;
+		color:#FFF;
+		font-size:1.0em;
+	}
+	#chip-prev {
+		background:black;
+		padding:5px;
+		width:100px;
+		text-align:center;
+		float:left;
+		border-radius: 5px;
+	}
+	#chip-prev a {
+		text-decoration:none;
+		color:#FFF;
+		font-size:1.0em;
+	}
+	#chip-next {
+		background:black;
+		padding:5px;
+		width:70px;
+		text-align:center;
+		float:left;
+		border-radius: 5px;
+		margin-left:20px;
+	}
+	#chip-next a {
+		text-decoration:none;
+		color:#FFF;
+		font-size:1.0em;
+	}
+	#chip-controls {
+		margin-top:20px;
+	}
+}
+
+@media (orientation:portrait) {
+	.orientation:after {
+	  content: " Portrait";
+	}
+}
+
+@media (orientation:landscape) {
+	.orientation:after {
+	  content: " Landscape";
+	}
+}
+
+
+#searchresults .modal-content {
+	background: white;
+}
+
+#searchresults .searchresults {
+	background: white;
+}
+
+#searchresults h4.modal-title {
+	color: black;
+}
+
+#searchresults .modal-header button, #searchresults .modal-header button:hover {
+	color: black;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	border: none;
+}
+

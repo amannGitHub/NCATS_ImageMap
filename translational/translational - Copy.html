@@ -1,0 +1,74 @@
+<!--https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js-->
+
+<link rel="stylesheet" type="text/css" href="https://ncats.nih.gov/sites/all/themes/ncats-2014/css/chip.css?pt24n7">
+<script src="https://ncats.nih.gov/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss"></script>
+<script src="https://ncats.nih.gov/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss"></script>
+<script src="https://ncats.nih.gov/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss"></script>
+<script src="https://ncats.nih.gov/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss"></script>
+<script src="https://ncats.nih.gov/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ncats.nih.gov/sites/all/themes/ncats-2014/dist/all.js?pt24n7"></script>
+
+<!-- Modal -->
+<div aria-labelledby="myModalLabel" class="modal fade" id="stepByStep" role="dialog" tabindex="-1">
+<div class="vertical-alignment-helper">
+<div class="modal-dialog vertical-align-center" role="document">
+<div class="modal-content">
+<div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+<div class="row hide col-lg-12" data-step="1" data-title="CHIP: Brain"><a href="/tissuechip/chip/brain" title="Meet Chip: Brain"><img alt="A 3D graphic image of the human brain" src="images/Chip-Organs_brain.png" /> </a></div>
+</div>
+
+<div class="modal-body">
+<a href="#/" class="glyphicon glyphicon-chevron-left js-btn-step" data-orientation="previous"></a>
+          <a href="#/" class="glyphicon glyphicon-chevron-right js-btn-step" data-orientation="next"></a>
+          
+          <div class="row hide col-xs-10 col-lg-10" data-step="1" data-title="CHIP: Brain" data-desc="brain">
+            <h4 class="js-title-step"></h4>
+
+            <p>The brain is the most complex part of the human body. It interprets sensations, initiates body movements and controls behavior. Scientists still have much to learn about how the brain actually works. Having 3-D systems that support living human brain tissue could help researchers better predict a drug's effects on the brain. </p>
+            
+            <p><a class="" href="/tissuechip/chip/brain" title="Meet Chip: Brain"><button class="btn">Learn more</button></a></p> 
+          </div>
+</div>
+<!-- end modal-body --></div>
+<!-- end modal content --></div>
+<!-- end modal-dialog --></div>
+<!-- end vertical-alignment-helper --></div>
+<!-- end modal -->
+
+
+
+<div class="field-body">
+<div id="chip">
+<div id="chip-left"><img alt="" width="1024" height="724" border="0" class="map" id="map" name="map" src="images/TranslationTogether_1024x724.png" usemap="#m_map" /></div>
+<!-- end chip left -->
+
+<p>
+        <map id="m_map" name="m_map">
+		  <area target="" alt="scientist" title="scientist" coords="191,103,424,214" shape="rect" data-toggle="modal">	
+          <area alt="researcher" coords="201,306,530,375" shape="rect" data-toggle="modal" data-step="1" data-target="#stepByStep" id="stepByStep1" class="stepMe" tabindex="0">		
+          <area alt="teamplayer" coords="729,117,689,148,637,150,637,165,509,165,510,202,661,204,692,168,724,193,769,159" shape="poly"  data-toggle="modal" data-step="2" data-target="#stepByStep" id="stepByStep2" class="stepMe" tabindex="0">			
+          <area alt="crosser" coords="709,109,709,94,858,114,865,142,892,153,921,131,919,94,882,72,858,94,692,73,672,86,497,84,497,122,689,122" shape="poly"  data-toggle="modal" data-step="3" data-target="#stepByStep" id="stepByStep3" class="stepMe" tabindex="0">			
+          <area alt="innovator" coords="750,220,765,220,777,226,781,235,783,246,781,258,778,267,777,276,769,283,760,287,752,295,748,304,743,311,737,319,731,326,725,335,913,335,913,371,711,370,710,333,720,315,731,294,736,279,732,261,727,246,729,234,737,223" shape="poly"  data-toggle="modal" data-step="4" data-target="#stepByStep" id="stepByStep4" class="stepMe" tabindex="0">		
+          <area alt="expert" coords="613,294,579,315,589,329,593,341,548,419,548,459,717,460,717,423,576,424,602,379,618,355,650,343,649,309" shape="poly"  data-toggle="modal" data-step="5" data-target="#stepByStep" id="stepByStep5" class="stepMe" tabindex="0">	
+          <area alt="communicator" coords="458,411,494,411,494,479,474,479,477,507,687,507,688,551,451,550,451,504,446,474,430,460,430,411" shape="poly"  data-toggle="modal" data-step="6" data-target="#stepByStep" id="stepByStep6" class="stepMe" tabindex="0">			
+          <area alt="thinker" coords="281,443,263,453,255,466,251,480,252,491,259,497,264,506,270,514,281,519,291,525,318,596,317,637,501,639,500,597,358,595,344,571,319,519,310,498,316,478,309,459,294,447" shape="poly"  data-toggle="modal" data-step="7" data-target="#stepByStep" id="stepByStep7" class="stepMe" tabindex="0">
+        </map>
+</p>
+
+<div style="clear: left; height: 8px;">&nbsp;</div>
+</div>
+<!-- end chip --></div>
+
+<!--[if lte IE 8]>
+		<script type="text/javascript" src="http://davidjbradshaw.com/imagemap-resizer/js/ie8.polyfil.min.js"></script>
+	<![endif]-->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://davidjbradshaw.com/imagemap-resizer/js/imageMapResizer.min.js"></script>
+	<script type="text/javascript">
+
+		$('map').imageMapResize();
+
+	</script>

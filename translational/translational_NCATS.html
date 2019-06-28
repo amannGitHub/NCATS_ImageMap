@@ -1,0 +1,121 @@
+
+
+
+
+<!--https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("area").click(function (event) {
+            var getBody = event.target.id;
+            if (getBody == "stepByStep1") {$("#modalBody1").removeClass("hide").addClass("show");}else{$("#modalBody1").removeClass("show").addClass("hide");}
+            if (getBody == "stepByStep2") {$("#modalBody2").removeClass("hide").addClass("show");}else{$("#modalBody2").removeClass("show").addClass("hide");}
+            if (getBody == "stepByStep3") {$("#modalBody3").removeClass("hide").addClass("show");}else{$("#modalBody3").removeClass("show").addClass("hide");}
+            if (getBody == "stepByStep4") {$("#modalBody4").removeClass("hide").addClass("show");}else{$("#modalBody4").removeClass("show").addClass("hide");}
+            if (getBody == "stepByStep5") {$("#modalBody5").removeClass("hide").addClass("show");}else{$("#modalBody5").removeClass("show").addClass("hide");}
+            if (getBody == "stepByStep6") {$("#modalBody6").removeClass("hide").addClass("show");}else{$("#modalBody6").removeClass("show").addClass("hide");}
+            if (getBody == "stepByStep7") {$("#modalBody7").removeClass("hide").addClass("show");}else{$("#modalBody7").removeClass("show").addClass("hide");}
+            if (getBody == "stepByStep8") {$("#modalBody8").removeClass("hide").addClass("show");}else{$("#modalBody8").removeClass("show").addClass("hide");}
+        });
+    });
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" data-title="researcher" data-desc="researcher">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="row hide col-xs-10 col-lg-10" data-desc="scientist" data-step="1" data-title="Characteristics of a Translational Scientist" id="modalBody1">
+                    <h4 class="js-title-step">Characteristics of a Translational Scientist</h4>
+                    <p>Translation is the process of turning observations in the laboratory, clinic and community into interventions that improve the health of individuals and the public&mdash;from diagnostics and therapeutics to medical procedures and behavioral changes. The professionals involved in this process, either developing interventions or improving the process itself, are TRANSLATIONAL SCIENTISTS.</p>
+                </div>
+
+                <div class="row hide col-xs-10 col-lg-10" data-desc="researcher" data-step="2" data-title="Rigorous Researcher" id="modalBody2">
+                    <h4 class="js-title-step">Rigorous Researcher</h4>
+                    <p>Conducts research at the highest level of rigor and transparency, possesses strong statistical analysis skills, and designs research projects to maximize reproducibility.</p>
+                </div>
+
+                <div class="row hide col-xs-10 col-lg-10" data-desc="player" data-step="3" data-title="Team Player" id="modalBody3">
+                    <h4 class="js-title-step">Team Player</h4>
+                    <p>Practices a team science approach by leveraging the strengths and expertise and valuating the contributions of all players on the translational science team.</p>
+                </div>
+
+                <div class="row hide col-xs-10 col-lg-10" data-desc="crosser" data-step="4" data-title="Boundary Crosser" id="modalBody4">
+                    <h4 class="js-title-step">Boundary Crosser</h4>
+                    <p>Breaks down disciplinary skills and collaborates with others across research areas and professions to collectively advance the development of a medical intervention.</p>
+                </div>
+
+                <div class="row hide col-xs-10 col-lg-10" data-desc="innovator" data-step="5" data-title="Process Innovator" id="modalBody5">
+                    <h4 class="js-title-step">Process Innovator</h4>
+                    <p>Seeks to better understand the scientific and operational principles underlying the translational process and innovates to overcome bottlenecks and accelerate that process.</p>
+                </div>
+
+                <div class="row hide col-xs-10 col-lg-10" data-desc="expert" data-step="6" data-title="Domain Expert" id="modalBody6">
+                    <h4 class="js-title-step">Domain Expert</h4>
+                    <p>Possesses deep disciplinary knowledge and expertise within one or more of the domains of the translational science spectrum ranging from basic to clinical to public health research and domains in between.</p>
+                </div>
+
+                <div class="row hide col-xs-10 col-lg-10" data-desc="communicator" data-step="7" data-title="Skilled Communicator" id="modalBody7">
+                    <h4 class="js-title-step">Skilled Communicator</h4>
+                    <p>Communicates with understanding with all stakeholders in the translational process across diverse social, cultural, economic and scientific backgrounds, including patients and community members.</p>
+                </div>
+
+                <div class="row hide col-xs-10 col-lg-10" data-desc="thinker" data-step="8" data-title="Systems Thinker" id="modalBody8">
+                    <h4 class="js-title-step">Systems Thinker</h4>
+                    <p>Evaluates the complex external forces, interactions and relationship impacting the development of medical interventions, including patient needs and preferences, regulatory requirements current standards of care, and market and business demands.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="field-body">
+<div id="chip">
+<div id="chip-left"><img alt="" width="1024" height="724" border="0" class="map" id="map" name="map" src="https://ncatswebqa.ncats.nih.gov/files/TranslationTogether_1024x724.png" usemap="#m_map" /></div>
+<!-- end chip left -->
+
+<p>
+        <map id="m_map" name="m_map">
+		  <area alt="scientist" title="scientist" coords="191,103,424,214" shape="rect" data-toggle="modal" data-step="1" data-target="#myModal" id="stepByStep1" class="stepMe" tabindex="0">	
+          <area alt="researcher" coords="201,306,530,375" shape="rect" data-toggle="modal" data-step="2" data-target="#myModal" id="stepByStep2" class="stepMe" tabindex="0">		
+          <area alt="teamplayer" coords="729,117,689,148,637,150,637,165,509,165,510,202,661,204,692,168,724,193,769,159" shape="poly"  data-toggle="modal" data-step="3" data-target="#myModal" id="stepByStep3" class="stepMe" tabindex="0">			
+          <area alt="crosser" coords="709,109,709,94,858,114,865,142,892,153,921,131,919,94,882,72,858,94,692,73,672,86,497,84,497,122,689,122" shape="poly"  data-toggle="modal" data-step="4" data-target="#myModal" id="stepByStep4" class="stepMe" tabindex="0">			
+          <area alt="innovator" coords="750,220,765,220,777,226,781,235,783,246,781,258,778,267,777,276,769,283,760,287,752,295,748,304,743,311,737,319,731,326,725,335,913,335,913,371,711,370,710,333,720,315,731,294,736,279,732,261,727,246,729,234,737,223" shape="poly"  data-toggle="modal" data-step="5" data-target="#myModal" id="stepByStep5" class="stepMe" tabindex="0">		
+          <area alt="expert" coords="613,294,579,315,589,329,593,341,548,419,548,459,717,460,717,423,576,424,602,379,618,355,650,343,649,309" shape="poly"  data-toggle="modal" data-step="6" data-target="#myModal" id="stepByStep6" class="stepMe" tabindex="0">	
+          <area alt="communicator" coords="458,411,494,411,494,479,474,479,477,507,687,507,688,551,451,550,451,504,446,474,430,460,430,411" shape="poly"  data-toggle="modal" data-step="7" data-target="#myModal" id="stepByStep7" class="stepMe" tabindex="0">			
+          <area alt="thinker" coords="281,443,263,453,255,466,251,480,252,491,259,497,264,506,270,514,281,519,291,525,318,596,317,637,501,639,500,597,358,595,344,571,319,519,310,498,316,478,309,459,294,447" shape="poly"  data-toggle="modal" data-step="8" data-target="#myModal" id="stepByStep8" class="stepMe" tabindex="0">
+        </map>
+</p>
+
+<div style="clear: left; height: 8px;">&nbsp;</div>
+</div>
+<!-- end chip --></div>
+
+<!--[if lte IE 8]>
+		<script type="text/javascript" src="http://davidjbradshaw.com/imagemap-resizer/js/ie8.polyfil.min.js"></script>
+	<![endif]-->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://davidjbradshaw.com/imagemap-resizer/js/imageMapResizer.min.js"></script>
+	<script type="text/javascript">
+
+		$('map').imageMapResize();
+
+	</script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Wavelength &amp; Amplitude</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <img id="wave_and_amp_banner" src="assets/banners/wavelength_and_amplitude_instruction_banner.png" onclick="hide_all_graphs();" />
+    <img id="grayscale_graph" class="" src="assets/graphs/grayscale_graph_v5.png" />
+    <img id="black_line" class="" src="assets/graphs/black_line.png" />
+
+    <!-- TEAL -->
+    <div id="teal_wordbox_hotspot" onclick="show_graph('teal');"></div>
+    <img id="teal_graph" src="assets/graphs/teal_graph_nogrid_v3.png" />
+
+    <!-- PURPLE -->
+    <div id="purple_wordbox_hotspot" onclick="show_graph('purple');"></div>
+    <img id="purple_graph" src="assets/graphs/purple_graph_nogrid_v3.png" />
+
+    <!-- BLUE -->
+    <div id="blue_wordbox_hotspot" onclick="show_graph('blue');"></div>
+    <img id="blue_graph" src="assets/graphs/blue_graph_nogrid_v3.png" />
+
+    <!-- GREEN -->
+    <div id="green_wordbox_hotspot" onclick="show_graph('green');"></div>
+    <img id="green_graph" src="assets/graphs/green_graph_nogrid_v3.png" />
+
+    <!-- Color Map
+
+    This canvas is the backbone of the entire project. It represents the color and location of each of the four wavelengths. When clicked on, we check to see what color the clicked pixel is, which tells us which wavelength is being clicked, thus we know which color wavelength to show. It is not meant to be seen by the user, only the browser, which can still determine the color being clicked on even though it is drawn completely transparent. It's purpose is to provide a "guide" to the browser so it knows what is where, hense the name "color map"
+
+    To do this, I created an all-in-one image containing the colored wavelengths, making sure to use the specific shade of color that each appear as. In order to make the clickable portions of each wavelength wider, I made each wavelength markedly thicker on the canvas than that of the wavelengths the user sees. This creates a kind of buffer that makes it quite a bit easier to click on. The canvas lays overtop of every other image we see, so that the pointer will always interact with the pixels in the canvas.  The canvas is styled to be 100% transparent, so that the user can only see what is underneath.
+
+    I created the image as described in Photoshop and saved it as a .png, however for security reasons <canvas> cannot return the contents of the pixel clicked on if it is displaying a hosted .png, thus I converted the color map image to a URI.  For details on it's implementation, please see /js/pixel-color.js.
+
+    -->
+    <canvas id="color-map" width="764" height="255"></canvas>
+
+    <!-- Scripts -->
+
+    <!-- Newest version of jQuery below.  Commented out so I could add the EPA's version of jQuery for testing, which is a modified version of 1.7.2  -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+    <!-- EPA's modified version of jQuery, v1.7.2, added for testing -->
+    <script src="https://www.epa.gov/sites/all/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+
+    <!-- Custom Javascript files -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/color-map.js"></script>
+  </body>
+</html>
